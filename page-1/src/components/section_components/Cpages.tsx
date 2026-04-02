@@ -3,11 +3,8 @@ import React from "react";
 let Cpages: React.FC = function () {
   return (
     <>
-      <div className="-mt-14">
-        <section
-          className="px-16 py-32"
-          style={{ background: "linear-gradient(135deg, #003D35, #091D1A)" }}
-        >
+      <div className="-z-50 -mt-14 mb-20">
+        <section className="px-16 py-32 bg-transparent">
           <div className="flex justify-between items-start">
             <h2 className="text-3xl font-bold text-[#C49A6C] leading-snug max-w-md">
               Mitra terpercaya untuk <br />
