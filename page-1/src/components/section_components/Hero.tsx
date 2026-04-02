@@ -6,7 +6,7 @@ let Hero: React.FC = () => {
   <section className="z-50 relative w-full h-[720px] overflow-hidden">
     <div className="relative h-[720px] rounded-b-[50px] shadow-lg overflow-hidden">
       <img src="/assets/img/hero-bg.png" className="absolute inset-0 w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute inset-0"></div>
       <div className="absolute top-0 left-0 w-full z-20 px-16 py-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <img src="/assets/img/logo-pui.png" className="w-[90px]" />
