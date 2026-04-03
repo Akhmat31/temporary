@@ -1,13 +1,13 @@
 let Testimonials = function () {
     return (
-          <section className="testimonial-section">
-    <div className="max-w-5xl mx-auto px-6">
+    <section className="testimonial-section">
+    <div className="max-w-7xl mx-auto px-6">
       <div className="google-badge text-[#4D4D4D]">
-        <div className="google-g">
+        <div className="google-g -ml-3">
             <img src="/assets/img/24ab7a440ef6f6b86af438c9c31494764e08e757.png" />
         </div>
         <span className="stars-inline">★</span>
-        <span>5/5 Trust Rating (87+ Reviews)</span>
+        <span className="font-bold text-base mt-[1px]">5/5 Trust Rating (87+ Review)</span>
       </div>
       <h2 className="text-3xl font-extrabold text-[#4D4D4D] mb-10">
         Apa kata pelanggan yang telah<br/>menggunakan layanan PUI
