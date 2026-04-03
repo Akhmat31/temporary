@@ -1,20 +1,19 @@
 let Endfooter = function () {
     return (
-        <footer className="w-full mx-auto p-20 bg-white">
+        <footer className="w-full mx-auto p-20">
             <div
                 style={{
                     borderTopLeftRadius: "30px",
                     borderTopRightRadius: "30px",
-                    background:
-                        "linear-gradient(135deg,#003a30 0%,#001d18 50%,#000504 100%)"
+                    backgroundColor: "white"
                 }}
-                className="w-full py-16 text-white"
+                className="w-full p-6 py-16"
             >
                 <div className="text-center mb-12">
-                    <h1 className="text-3xl mb-4 font-extrabold">
+                    <h1 className="text-3xl text-[#003B33] mb-4 font-extrabold">
                         Didukung Standar Keamanan Tinggi
                     </h1>
-                    <p className="text-white/80 leading-relaxed">
+                    <p className="text-[#4D4D4D] font-semibold">
                         Menghadirkan perlindungan aset kelas premium
                         dengan standar keamanan tinggi,
                         <br />
@@ -23,30 +22,34 @@ let Endfooter = function () {
                     </p>
                 </div>
                 <div className="flex justify-center gap-8">
-                    <div className="flex items-center gap-4 
-                        bg-white/10 backdrop-blur-md 
-                        px-6 py-4 rounded-xl 
-                        w-[320px]">
+                    <div className="flex flex-col items-center justify-center 
+    shadow-md px-6 py-4 rounded-xl w-[320px]">
+
                         <img
-                            src="/assets/img/logo-ojk.png"
-                            width="80"
-                            alt=""
+                            src="/assets/img/976bcb699eee62365f73346a6cc9c54906a407b5.png"
+                            className="h-auto"
+                            width="100"
                         />
-                        <span className="font-medium">
-                            Terdaftar & diawasi OJK
-                        </span>
                     </div>
-                    <div className="flex items-center gap-4 
-                        bg-white/10 backdrop-blur-md 
+
+                    <div className="flex flex-col items-center justify-center 
+    shadow-md px-6 py-4 rounded-xl w-[320px]">
+                        <img
+                            src="/assets/img/09dd06d3deee0d04947fcc24e3c35ec5d9e191e3.png"
+                            className="h-auto"
+                            width="100"
+                        />
+                    </div>
+                    <div className="flex justify-center items-center gap-4 
+                        shadow-md
                         px-6 py-4 rounded-xl 
                         w-[320px]">
                         <img
-                            src="/assets/img/d8a28cc7d63c61e6d01f7699200f9f7a096d9c27.png"
-                            width="80"
-                            alt=""
+                            src="/assets/img/60801985fc03ada13d72d3999781a82323267511.png"
+                            width="50"
                         />
                         <span className="font-medium">
-                            Anggota Resmi PPGI
+                            ISO 9001 & 27001
                         </span>
                     </div>
                 </div>
