@@ -149,12 +149,15 @@
 .card-icon-wrap {
     width: 48px;
     height: 48px;
-    background: #F5F0E8;
+    background: #C49A6C;
     border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+}
+.card-icon-wrap img {
+    filter: brightness(0);
 }
 
 .card h3 {

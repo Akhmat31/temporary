@@ -26,12 +26,7 @@ let Consult = function () {
         <div className="cards-row top-10">
           <div className="card">
             <div className="card-icon-wrap">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <rect x="3" y="6" width="18" height="14" rx="2" stroke="#1B4332" strokeWidth="1.5" />
-                <path d="M3 10h18" stroke="#1B4332" strokeWidth="1.5" />
-                <path d="M8 3v3M16 3v3" stroke="#1B4332" strokeWidth="1.5" strokeLinecap="round" />
-                <rect x="7" y="14" width="4" height="3" rx="0.5" fill="#1B4332" />
-              </svg>
+              <img src="/assets/img/81829e2cbb1d51f007adb0e183c5911e296267be.png" width="24px" />
             </div>
             <h3>Bawa langsung aset mewah ke kantor PUI</h3>
             <p>Anda dapat membawa langsung aset mewah Anda ke kantor PUI untuk mendapatkan pengalaman layanan yang cepat, aman, dan transparan. Tim profesional kami akan melakukan proses valuasi secara detail <br /> dan akurat, memastikan Anda mendapatkan nilai terbaik sesuai kondisi dan pasar terkini.</p>
@@ -55,11 +50,7 @@ let Consult = function () {
 
           <div className="card">
             <div className="card-icon-wrap">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3C8 3 5 6 5 10c0 5.25 7 11 7 11s7-5.75 7-11c0-4-3-7-7-7z" stroke="#1B4332" strokeWidth="1.5" />
-                <path d="M9 10.5c0 .828.448 1.5 1 1.5h4c.552 0 1-.672 1-1.5S14.552 9 14 9h-4c-.552 0-1 .672-1 1.5z" stroke="#1B4332" strokeWidth="1.2" />
-                <path d="M12 7v2M12 12v2" stroke="#1B4332" strokeWidth="1.2" strokeLinecap="round" />
-              </svg>
+              <img src="/assets/img/d8d020e2c5ce16700e20195204cc0d38d6ba12bb.png" width="24px" />
             </div>
             <h3>Layanan Jemput Barang</h3>
             <p>Untuk kenyamanan maksimal, PUI menyediakan layanan jemput aset langsung ke lokasi Anda. Layanan ini dirancang bagi Anda yang menginginkan proses praktis tanpa perlu datang ke kantor. Tim kami akan datang dengan prosedur keamanan ketat dan profesionalisme tinggi dalam menangani setiap aset.</p>
