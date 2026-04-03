@@ -1,5 +1,3 @@
-import "./style/product.css";
-
 let Product = function () {
     const products = [
         {

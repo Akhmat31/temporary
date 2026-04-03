@@ -3,7 +3,7 @@ import React from "react";
 let Cpages: React.FC = function () {
   return (
     <>
-      <div className="-z-50 -mt-14 mb-20">
+      <div className="-z-50 -mt-14">
         <section className="px-16 py-32 bg-transparent">
           <div className="flex justify-between items-start">
             <h2 className="text-3xl font-bold text-[#C49A6C] leading-snug max-w-md">
