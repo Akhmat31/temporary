@@ -71,7 +71,7 @@ let Product = function () {
                                     )}
                                 </div>
                             </div>
-                            <div className="p-2">
+                            <div className="p-2 z-50">
                                 <h3 className="text-lg font-semibold mb-3">
                                     {item.title}
                                 </h3>
