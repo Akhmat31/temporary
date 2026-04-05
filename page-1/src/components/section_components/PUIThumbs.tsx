@@ -1,6 +1,6 @@
 let PUIThumbs = function () {
     return (
-        <div className="bg-white">
+        <div className="bg-white gsap-reveal">
             <div className="text-center py-24">
                 <h1 className="text-6xl font-extrabold text-[#003B33]">Pave Your Dreams</h1>
                 <div>
@@ -10,7 +10,7 @@ let PUIThumbs = function () {
                     </p>
                 </div>
                 <div className="flex justify-center">
-                    <div className="mb-16 p-2 text-sm font-bold text-[#007F6D] border-2 w-[230px] rounded-lg border-[#007F6D]">
+                    <div className="mb-16 p-2 text-sm font-bold text-[#007F6D] border-2 w-[230px] rounded-lg border-[#007F6D] cursor-pointer hover:bg-[#007F6D] hover:text-white hover:scale-105 transition-all duration-300">
                         Lihat Selengkapnya Tentang PUI
                     </div>
                 </div>

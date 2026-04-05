@@ -34,13 +34,15 @@ let Product = function () {
         },
     ];
     return (
-        <section className="bg-gradient-to-b from-[#052e2b] via-[#063d36] to-[#052e2b] text-white py-20">
+        <section style={{
+            background: "linear-gradient(135deg, rgb(0, 58, 48) 0%, rgb(0, 29, 24) 50%, rgb(0, 5, 4) 100%)"
+        }} className="text-white py-12">
             <div className="max-w-5xl mx-auto px-6">
                 <p className="text-2xl text-[#9CA3AF] mb-2 italic text-center">Our Product</p>
                 <h2 className="text-center text-4xl md:text-5xl font-extrabold text-[#C49A6C] mb-3">
                     Layanan Likuiditas Aset Mewah
                 </h2>
-                <p className="text-center text-gray-300 mb-40">
+                <p className="text-center text-gray-300 mb-16">
                     Pergadaian Utama Indonesia (PUI) menyediakan layanan gadai komprehensif
                     untuk berbagai aset mewah, mulai <br /> dari jam tangan premium, tas branded,
                     berlian, hingga emas dan perhiasan eksklusif.
@@ -52,7 +54,7 @@ let Product = function () {
                             className={`product-card mb-16 ${item.variant === "rare" ? "product-card-rare" : ""
                                 }`}
                         >
-                            <div className="bg-[#0000002d] border-t-[#0000002d] rounded-xl w-full h-44 flex items-center justify-center mb-5" style={{
+                            <div className="bg-[#0000002d] border-t-[#0000002d] rounded-xl w-full h-44 flex items-center justify-center mb-5 z-10 relative" style={{
                                 borderBottomLeftRadius: "0px",
                                 borderBottomRightRadius: "0px"
                             }}>
@@ -71,14 +73,14 @@ let Product = function () {
                                     )}
                                 </div>
                             </div>
-                            <div className="p-2 z-50">
+                            <div className="p-2 z-[100] text-left flex flex-col flex-grow relative">
                                 <h3 className="text-lg font-semibold mb-3">
                                     {item.title}
                                 </h3>
                                 <p className="text-sm text-gray-300 mb-6 ">
                                     {item.desc}
                                 </p>
-                                <button className="mt-auto text-sm border-2 border-[#5C5E3D] mb-4 font-bold text-[#C49A6C] px-4 py-2 rounded-[15px] bg-[#C49A6C30]">
+                                <button className="hover-premium-btn mt-auto text-sm border-2 border-[#5C5E3D] mb-4 font-bold text-[#C49A6C] px-4 py-2 rounded-[15px] bg-[#C49A6C30]">
                                     Pelajari Selengkapnya
                                 </button>
                             </div>

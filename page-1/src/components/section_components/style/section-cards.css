@@ -1,6 +1,6 @@
 .pui-wrap {
     position: relative;
-    width: min(1000px, 100%);  /* atau: max-width: 1000px; width: 100%; */
+    width: min(1200px, 100%);  /* atau: max-width: 1200px; width: 100%; */
     box-sizing: border-box;
     border-radius: 16px;
 }
@@ -129,8 +129,6 @@
     overflow: hidden;
     margin-top: -60px;
     background: #FFFFFF;
-    border-left: solid 1px #cecece;
-    border-right: solid 1px #cecece;
     padding: 50px 0px 0px 0px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
@@ -140,10 +138,12 @@
 
 .card {
     background: #FFFFFF;
-    border-radius: 16px;
-    border-top-left-radius: 0px;
-    border-bottom: solid 1px #cecece;
+    border-radius: 10px;
+    border: solid 1px #cecece;
     padding: 28px 28px 24px 28px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card-icon-wrap {
@@ -184,6 +184,7 @@
     color: #1B4332;
     text-decoration: none;
     cursor: pointer;
+    margin-top: auto;
 }
 
 .arrow {

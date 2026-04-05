@@ -8,6 +8,35 @@
     cursor: pointer;
     letter-spacing: 0.02em;
     display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+.btn-wa {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #25D366;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-wa:hover {
+    background: #20BA5A;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
 .process-section {
@@ -113,6 +142,7 @@
     padding: 24px 24px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     border: 1px solid rgba(0, 0, 0, 0.05);
+    white-space: normal; /* CRITICAL: override parent marquee nowrap */
 }
 
 .google-badge {
@@ -213,6 +243,7 @@
 .card-headline span {
     color: #c8a96e;
 }
+
 .deco-circle {
     position: absolute;
     border-radius: 50%;
@@ -260,6 +291,7 @@
 .lihat-selengkapnya:hover {
     color: #c8a96e;
 }
+
 .watch-silhouette-1 {
     position: absolute;
     right: 14px;
@@ -270,6 +302,7 @@
     border: 3px solid #c8a96e;
     border-radius: 10px;
 }
+
 .gold-block {
     position: absolute;
     right: 20px;
@@ -281,6 +314,7 @@
     opacity: 0.6;
     transform: rotate(12deg);
 }
+
 .watch-face {
     position: absolute;
     border-radius: 50%;
@@ -309,4 +343,211 @@
     right: 60px;
     top: 60px;
     background: radial-gradient(circle, rgba(200, 169, 110, 0.18) 0%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+@keyframes pulse-whatsapp {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.animate-pulse-whatsapp {
+    animation: pulse-whatsapp 2s infinite;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-33.33%);
+    }
+}
+
+.testimonial-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+
+.testimonial-track {
+    display: flex;
+    gap: 40px;
+    animation: marquee-scroll 40s linear infinite;
+    width: max-content;
+}
+
+.testimonial-track:hover {
+    animation-play-state: paused;
+}
+
+/* Vertical Text Switcher */
+@keyframes slide-up-in {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up-out {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.text-switcher-container {
+    display: inline-flex;
+    height: 1.25em;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    /* Base width for assets */
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.text-switcher-item {
+    position: absolute;
+    width: 100%;
+    color: #B8945F;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.text-switcher-item.enter {
+    animation: slide-up-in 0.5s forwards;
+}
+
+.text-switcher-item.exit {
+    animation: slide-up-out 0.5s forwards;
+}
+
+/* Lenis Smooth Scroll */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+/* Hover Animations */
+.hover-premium-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-premium-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    filter: brightness(1.1);
+    box-shadow: 0 10px 20px rgba(196, 154, 108, 0.2);
+}
+
+.hover-link-arrow {
+    transition: all 0.3s ease;
+}
+
+.hover-link-arrow svg {
+    transition: transform 0.3s ease;
+}
+
+.hover-link-arrow:hover {
+    color: #111 !important;
+}
+
+.hover-link-arrow:hover svg {
+    transform: translateX(5px);
+}
+
+.hover-social-icon {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-social-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: #C49A6C !important;
+    color: white !important;
+    box-shadow: 0 8px 15px rgba(196, 154, 108, 0.3);
+}
+
+.hover-social-icon:hover svg {
+    color: white !important;
+}
+
+.social-fb:hover {
+    background-color: #1877F2 !important;
+}
+
+.social-ig:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+}
+
+.social-li:hover {
+    background-color: #0077B5 !important;
+}
+
+.hover-contact-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-contact-card:hover {
+    border-color: #C49A6C !important;
+    background: rgba(196, 154, 108, 0.05);
+    transform: translateX(5px);
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animate-floating {
+    animation: floating 3s ease-in-out infinite;
 }

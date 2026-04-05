@@ -1,20 +1,23 @@
+import MapComponent from "./MapComponent.tsx";
+import { FaLocationDot, FaClock, FaPhone, FaWhatsapp, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+
 let Endfooter = function () {
     return (
-        <footer className="w-full mx-auto p-20 bg-white">
+        <footer className="w-full mx-auto p-12 bg-white">
             <div
                 style={{
                     borderTopLeftRadius: "30px",
                     borderTopRightRadius: "30px",
                     background:
-                        "linear-gradient(135deg,#003a30 0%,#001d18 50%,#000504 100%)"
+                        "linear-gradient(135deg, rgb(0, 58, 48) 0%, rgb(0, 29, 24) 50%, rgb(0, 5, 4) 100%)"
                 }}
-                className="w-full py-16 text-white"
+                className="w-full py-8 text-white"
             >
                 <div className="text-center mb-12">
                     <h1 className="text-3xl mb-4 font-extrabold">
                         Didukung Standar Keamanan Tinggi
                     </h1>
-                    <p className="text-white/80 leading-relaxed">
+                    <p className="text-white/80 leading-relaxed text-[12px] max-w-xl mx-auto">
                         Menghadirkan perlindungan aset kelas premium
                         dengan standar keamanan tinggi,
                         <br />
@@ -52,24 +55,22 @@ let Endfooter = function () {
                 </div>
             </div>
             <div>
-                <div className="w-full">
-                    <img src="/assets/img/b1f2109c3a1758ec231d48590ba9d6dc545b51b6.png" />
-                </div>
+                <MapComponent />
             </div>
             <div
                 style={{
                     borderBottomLeftRadius: "30px",
                     borderBottomRightRadius: "30px",
                     background:
-                        "linear-gradient(135deg,#003a30 0%,#001d18 50%,#000504 100%)"
+                        "linear-gradient(135deg, rgb(0, 58, 48) 0%, rgb(0, 29, 24) 50%, rgb(0, 5, 4) 100%)"
                 }}
-                className="w-full text-white pt-16 pb-8 px-12"
+                className="w-full text-white pt-10 pb-8 px-12"
             >
                 <div className="grid grid-cols-4 gap-12 mb-12">
                     <div>
                         <img src="/assets/img/logo-pui.png" className="w-[160px]" />
                         <div className="flex-col mt-10 gap-3 mb-4">
-                            <i className="fa-solid fa-location-dot mt-1 pr-2 text-white/80"></i>
+                            <FaLocationDot className="mt-1 pr-2 text-white/80" />
                             <span className="font-bold">Alamat</span>
                             <p className="text-white/70 mt-2 text-sm leading-relaxed">
                                 The Darmawangsa Square Lt.2 No.263-264,
@@ -78,7 +79,7 @@ let Endfooter = function () {
                             </p>
                         </div>
                         <div className="flex-col gap-3">
-                            <i className="fa-solid fa-clock mt-1 pr-2 text-white/80"></i>
+                            <FaClock className="mt-1 pr-2 text-white/80" />
                             <span className="font-bold">Jam buka: </span>
                             <div className="text-white/70 mt-2 text-sm">
                                 <li className="ml-5">Senin s/d Jumat : 10.00 s/d 17.30</li>
@@ -125,19 +126,19 @@ let Endfooter = function () {
                         <h3 className="font-semibold -mt-2 mb-3">
                             Kontak
                         </h3>
-                        <div className="space-y-1">
-                            <div className="flex items-center gap-3 
+                        <div className="space-y-2">
+                            <div className="hover-contact-card flex items-center gap-3 
                                 border-2 border-white px-4 py-3 rounded-lg">
-                                <i className="fa-solid fa-phone"></i>
+                                <FaPhone />
                                 <span className="text-sm">
                                     Telepon:
                                     <br />
                                     021-7278-7020
                                 </span>
                             </div>
-                            <div className="flex items-center gap-3 
+                            <div className="hover-contact-card flex items-center gap-3 
                                 border-2 border-white px-4 py-3 rounded-lg">
-                                <i className="fa-brands fa-whatsapp"></i>
+                                <FaWhatsapp />
                                 <span className="text-sm">
                                     WhatsApp:
                                     <br />
@@ -146,15 +147,15 @@ let Endfooter = function () {
                             </div>
                         </div>
                         <div className="flex gap-4 mt-6">
-                            <div className="flex items-center justify-center cursor-pointer">
-                                <i className="text-2xl fa-brands fa-facebook-f"></i>
+                            <div className="hover-social-icon social-fb w-10 h-10 flex items-center justify-center cursor-pointer rounded-full bg-white/10">
+                                <FaFacebookF className="text-xl" />
                             </div>
-                            <div className="w-9 h-9 flex items-center justify-center cursor-pointer">
-                                <i className="text-2xl fa-brands fa-instagram"></i>
+                            <div className="hover-social-icon social-ig w-10 h-10 flex items-center justify-center cursor-pointer rounded-full bg-white/10">
+                                <FaInstagram className="text-xl" />
                             </div>
-                            <div className="w-9 h-9 flex items-center justify-center 
-                                bg-white rounded cursor-pointer">
-                                <i className="text-black fa-brands fa-linkedin-in"></i>
+                            <div className="hover-social-icon social-li w-10 h-10 flex items-center justify-center 
+                                bg-white rounded-full cursor-pointer text-black">
+                                <FaLinkedinIn className="text-xl" />
                             </div>
                         </div>
                     </div>

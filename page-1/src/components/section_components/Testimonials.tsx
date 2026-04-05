@@ -1,3 +1,5 @@
+import React from "react";
+
 let Testimonials = function () {
     return (
     <section className="testimonial-section">
@@ -12,41 +14,46 @@ let Testimonials = function () {
       <h2 className="text-3xl font-extrabold text-[#4D4D4D] mb-10">
         Apa kata pelanggan yang telah<br/>menggunakan layanan PUI
       </h2>
-      <div className="flex gap-10">
-        <div className="review-card flex-1">
-          <div className="flex items-center mb-3">
-            <div>
-              <p className="text-base font-semibold text-[#4D4D4D]">Anonim User</p>
-              <div className="stars">★★★★★</div>
-            </div>
-          </div>
-          <p className="text-sm text-gray-600">
-            Prosesnya cepat dan transparan. Saya gadaikan jam tangan mewah, valuasinya sangat profesional dan sesuai ekspektasi. Sangat recommended.
-          </p>
+      <div className="testimonial-marquee">
+        <div className="testimonial-track">
+          {[1, 2, 3].map((set) => (
+            <React.Fragment key={set}>
+              <div className="review-card w-[400px] shrink-0">
+                <div className="flex items-center mb-3">
+                  <div>
+                    <p className="text-base font-semibold text-[#4D4D4D]">Anonim User</p>
+                    <div className="stars">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600">
+                  Prosesnya cepat dan transparan. Saya gadaikan jam tangan mewah, valuasinya sangat profesional dan sesuai ekspektasi. Sangat recommended.
+                </p>
+              </div>
+              <div className="review-card w-[400px] shrink-0">
+                <div className="flex items-center gap-2 mb-3">
+                  <div>
+                    <p className="text-base font-semibold text-gray-800">Anonim User</p>
+                    <div className="stars">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600">
+                  Pelayanan sangat ramah dan sangat membantu. Privasi benar-benar terjaga 100%. Terima kasih PUI atas solusinya.
+                </p>
+              </div>
+              <div className="review-card w-[400px] shrink-0">
+                <div className="flex items-center gap-2 mb-3">
+                  <div>
+                    <p className="text-base font-semibold text-gray-800">Anonim User</p>
+                    <div className="stars">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600">
+                  Tempat gadai aset mewah terbaik di Jakarta. Tim appraisal sangat ahli dan detail. Proses pencairan dana sangat cepat.
+                </p>
+              </div>
+            </React.Fragment>
+          ))}
         </div>
-        <div className="review-card flex-1">
-          <div className="flex items-center gap-2 mb-3">
-            <div>
-              <p className="text-base font-semibold text-gray-800">Anonim User</p>
-              <div className="stars">★★★★★</div>
-            </div>
-          </div>
-          <p className="text-sm text-gray-600">
-            Prosesnya cepat dan transparan. Saya gadaikan jam tangan mewah, valuasinya sangat profesional dan sesuai ekspektasi. Sangat recommended.
-          </p>
-        </div>
-        <div className="review-card flex-1">
-          <div className="flex items-center gap-2 mb-3">
-            <div>
-              <p className="text-base font-semibold text-gray-800">Anonim User</p>
-              <div className="stars">★★★★★</div>
-            </div>
-          </div>
-          <p className="text-sm text-gray-600">
-            Prosesnya cepat dan transparan. Saya gadaikan jam tangan mewah, valuasinya sangat profesional dan sesuai ekspektasi. Sangat recommended.
-          </p>
-        </div>
-
       </div>
 
     </div>
