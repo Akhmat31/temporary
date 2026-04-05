@@ -155,7 +155,8 @@ let Endfooter = function () {
                             </div>
                             <div className="hover-social-icon social-li w-10 h-10 flex items-center justify-center 
                                 bg-white rounded-full cursor-pointer text-black">
-                                <FaLinkedinIn className="text-xl" />                            </div>
+                                <FaLinkedinIn className="text-xl" />
+                            </div>
                         </div>
                     </div>
                 </div>
