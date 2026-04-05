@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "../__global/Navbar";
 import { FaWhatsapp, FaCamera, FaGem, FaRegClock } from "react-icons/fa";
+import ScrollProgress from "./ScrollProgress";
 
 let Hero: React.FC = () => {
   const words = ["EMAS", "BERLIAN", "ROLEX", "TAS MEWAH"];
@@ -21,6 +22,7 @@ let Hero: React.FC = () => {
         <img src="/assets/img/hero-bg.png" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0"></div>
         <div className="fixed top-0 left-0 w-full z-[100] px-16 py-6 flex items-center justify-between backdrop-blur-md bg-black">
+          <ScrollProgress />
           <div className="flex items-center gap-2 flex-1">
             <img src="/assets/img/logo-pui.png" className="w-[110px]" />
           </div>
